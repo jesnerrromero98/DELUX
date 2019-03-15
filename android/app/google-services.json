@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742357839533",
+    "firebase_url": "https://deluxenica.firebaseio.com",
+    "project_id": "deluxenica",
+    "storage_bucket": "deluxenica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742357839533:android:038ae62da2747f6b",
+        "android_client_info": {
+          "package_name": "com.deluxe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742357839533-8l7rn05ak15fhs43mfadjhhff20rp5sr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deluxe",
+            "certificate_hash": "59e4bcbc80e39e9462ecd641ae6c531024e4b84b"
+          }
+        },
+        {
+          "client_id": "742357839533-t2as3uifitbp9puie0qghq5pl3m7annu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMcduedmws3moCvWnO8k-iGqWROTG4LFA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742357839533-t2as3uifitbp9puie0qghq5pl3m7annu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
