@@ -11,6 +11,8 @@
     "react-native": "0.58.6",
     "react-native-firebase": "^5.2.3",
     "react-native-hide-show-password-input": "^1.0.7",
+    "react-native-swipe": "^1.0.0",
+    "react-native-swiper": "^1.5.14",
     "react-navigation": "2.18.2"
   },
   "devDependencies": {

@@ -48,17 +48,17 @@ const LoginApp = (props) => {
                 </TouchableOpacity>
             </View>
             <View style={styles.row}>
-                <View style = {styles.margin}>
+                <View style = {styles.Botones}>
                     <Button
                         title={'Entrar'}
-                        color='blue'
+                        color='#193555'
                         onPress={miOnPressDeIniciarSesion}
                     />
                 </View>
-                <View style = {styles.margin}>
+                <View style = {styles.Botones}>
                     <Button
                         title={'Registrarse'}
-                        color='blue'
+                        color='#193555'
                         onPress={miOnPressDeIniciarSesion}
                     />
                 </View>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
 
     row:{
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent:  'space-around',
     },
 
     img:{
@@ -88,20 +88,21 @@ const styles = StyleSheet.create({
         marginRight: 0,
         borderRadius: 15
     },
-    margin:{
+   Botones:{
         marginTop: 8,
-        flex: 1,
+        flex:1,
         margin: 2,
         borderRadius: 100
     },
+    
     text:{
         marginTop: 15,
         backgroundColor: 'transparent',
-        marginLeft: 10,
-        marginRight: 10,
-        borderColor: 'blue',
+        marginLeft: 20,
+        marginRight: 20,
+        borderColor: 'white',
         borderWidth: 1,
-        borderRadius: 50,
+        borderRadius: 30,
         fontSize: 30,
         height: 40
     },

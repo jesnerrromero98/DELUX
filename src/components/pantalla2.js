@@ -7,9 +7,9 @@ import{
 const Pantalla2 =()=>{
     return(
         <View>
-            <Text>
-                Esta es la pantalla numero 2
-            </Text>
+            <Text>Nombre</Text>
+            <Text>apellido</Text>
+
         </View>
     )
 }

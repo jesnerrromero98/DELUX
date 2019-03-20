@@ -6,67 +6,61 @@ import{
     StyleSheet,
     FlatList,
     Image,
-    ImageBackground,
     TouchableOpacity,
 } from 'react-native'
-
-
-
+import Slide from './Slider'
+   
 const Inicio =(props)=>{
-
-    const { categorias, productos } = props
+    const { categorias, productos } = props 
 
     console.log("InicioComponente", productos)
 
  return( 
-    <View >
+   
+   <ScrollView >
+        <View style={styles.listCategoria}>
 
-        <ImageBackground style={styles.fondo} source={require('./../image/fondo.jpg')}>
+            <Text style={styles.titleCategoria}>CATEGORIAS</Text>
 
-            <View style={styles.listCategoria}>
-
-                <Text style={styles.titleCategoria}>CATEGORIAS</Text>
-
-                <FlatList
-                    data={
-                        categorias
-                    }
-                    renderItem={
-                        ({ item }) => (
-                            <TouchableOpacity>
-                                <View style={styles.itemDeCategoria}><Text style={styles.categoria}>{item.categoria}</Text></View>
-                            </TouchableOpacity>
-                        )
-                    }
-                    horizontal={true}
-                    ItemSeparatorComponent={
-                        () => (
-                            <View style={styles.separator} />
-                        )
-                    }
-                />
-
-            </View>
-
-            <ScrollView>
-                <FlatList
-                    style={styles.listaProductos}
-                    data={productos}
-                    renderItem={
-                        ({ item }) => (
-                            <ItemProducto
-                                item={item}
-                            />
-                        )
-                    }
-                    horizontal={false}
-                />
-            </ScrollView>
-
-        </ImageBackground>
+            <FlatList
+                data={
+                    categorias
+                }
+                renderItem={
+                    ({ item }) => (
+                        <TouchableOpacity>
+                            <View style={styles.itemDeCategoria}><Text style={styles.categoria}>{item.categoria}</Text></View>
+                        </TouchableOpacity>
+                    )
+                }
+                horizontal={true}
+                ItemSeparatorComponent={
+                    () => (
+                        <View style={styles.separator} />
+                    )
+                }
+            />
         
-    </View>
-        
+        </View>
+        <View style={[styles.promo]}> 
+            <Slide> </Slide>
+        </View>
+        <ScrollView>
+        <FlatList
+            style={styles.listaProductos}
+            data={productos}
+            renderItem={
+                ({ item }) => (
+                    <ItemProducto
+                        item={item}
+                    />
+                )
+            }
+            horizontal={false}
+        />
+        </ScrollView>
+    </ScrollView>
+       
 )};
 
     const ItemProducto = (props) => {
@@ -82,9 +76,9 @@ const Inicio =(props)=>{
                     height={198}
                 />
             
-                <Text style={styles.texto}>{item.nombre}</Text>
-                <Text style={styles.text1}>{item.descripcion}</Text>
-                <Text style={styles.text2}> C$ {item.precio}</Text>
+                <Text style={styles.nombre}>{item.nombre}</Text>
+                <Text style={styles.descripcion}>{item.descripcion}</Text>
+                <Text style={styles.precio}> C$ {item.precio}  ¡Comprar Ahora!</Text>
              
              </View>
         )
@@ -95,15 +89,16 @@ const Inicio =(props)=>{
         listaProductos: {
             flex: 1,
             width: '100%',
-            height: 500,
+            height: '100%',
         },
     
     header: {
-        marginTop: 10,
-        marginLeft: 10,
-        marginRight: 30,
-        width: 340,
+        backgroundColor:'white' ,
+        marginTop: 5,
+        marginLeft: 0,
+        width: 370,
         height: 200,
+        
     },
     headerImage: {
         backgroundColor: 'white',
@@ -112,32 +107,32 @@ const Inicio =(props)=>{
         resizeMode: 'cover',
         marginTop:0
     },
-    texto:{
+    nombre:{
         color:'black',
-        marginLeft:190,
+        marginLeft:150,
         marginRight: 0,
         marginTop:-200,
-        fontSize: 25,
+        fontSize: 20,
         fontFamily: 'Fontastique',
         fontWeight: 'bold',
         fontStyle: 'italic'
         
     },
-    text1:{
+    descripcion:{
         color:'black',
-        marginLeft:160,
-        marginRight:5,
+        marginLeft:150,
+        marginRight:0,
         fontSize: 16,
-        marginTop:10,
-        
+        marginTop:5,
     },
-    text2:{
+    precio:{
         color:'black',
-        marginLeft: 190,
-        marginRight: 65,
-        fontSize: 20,
-        marginTop:30,
-        borderWidth: 1,
+        marginLeft: 150,
+        marginRight: 0,
+        margin :100,
+        fontSize: 15,
+        fontWeight: 'bold',
+        marginTop:5,
         
     },
     text3:{
@@ -159,12 +154,13 @@ const Inicio =(props)=>{
 
     listCategoria: {
         margin: 8,
+        flex: 1,
     },
 
     itemDeCategoria: {
         padding: 8,
         borderRadius: 50,
-        backgroundColor: 'red',
+        backgroundColor: '#193555',
     },
     separator: {
         width: 4,
@@ -177,5 +173,12 @@ const Inicio =(props)=>{
         height: '100%',
         resizeMode: 'cover',
     },
+    promo:{
+        marginTop :5,
+        backgroundColor:'#E5E8E8' , 
+        flex: 1,
+    },
+    
+      
 });
 export default Inicio;

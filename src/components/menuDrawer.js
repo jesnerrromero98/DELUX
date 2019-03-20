@@ -22,7 +22,7 @@ const Pantalla1Navigator = createStackNavigator({
       navigationOptions: {
         title: 'DELUXE NICA',
         headerStyle: {
-          backgroundColor: '#0000FF',
+          backgroundColor: '#193555',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
