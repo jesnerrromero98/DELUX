@@ -3,13 +3,11 @@ import{
     View,
     Text
 } from 'react-native'
-
+import Perfil from './Perfil';
 const Pantalla3 =()=>{
     return(
         <View>
-            <Text>
-                Esta es la pantalla numero 3
-            </Text>
+            <Perfil></Perfil>
         </View>
     )
 }
