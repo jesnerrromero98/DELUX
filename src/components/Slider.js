@@ -22,7 +22,7 @@ const styles = {
     },
     image: {
         flex: 1,
-        width
+        width: '100%'
     }
 }
 
