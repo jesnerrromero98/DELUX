@@ -17,12 +17,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-import Login from './src/container/loginContainer'
+import MenuAuth from './src/components/menu-auth'
 
 export default class App extends Component {
   render() {
     return (
-      <Login/>
+      <MenuAuth/>
     );
   }
 }   
