@@ -7,7 +7,10 @@ import {
 import Inicio from './../container/inicioContainer';
 import Pantalla2 from './pantalla2';
 import Pantalla3 from './pantalla3';
-import PantallaInformacion from './pantalla-informacion'
+import PantallaInformacion from './pantalla-informacion';
+import  Detaproducto from './../container/poducto-detalle-container';
+import Compra from './Compras';
+
 
 import {
     Image,
@@ -21,6 +24,32 @@ const Pantalla1Navigator = createStackNavigator({
       screen: Inicio,
       navigationOptions: {
         title: 'DELUXE NICA',
+        headerStyle: {
+          backgroundColor: '#193555',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      },
+    },
+    detaproducto: {
+      screen: Detaproducto,
+      navigationOptions: {
+        title: 'Detalles Productos',
+        headerStyle: {
+          backgroundColor: '#193555',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      },
+    },
+    compra: {
+      screen: Compra,
+      navigationOptions: {
+        title: 'Comprar Productos',
         headerStyle: {
           backgroundColor: '#193555',
         },
