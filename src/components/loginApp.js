@@ -16,6 +16,7 @@ const LoginApp = (props) => {
         miOnChangeDeUSuario,
         miOnChangeDePassword,
         miOnPressDeIniciarSesion,
+        miOnPressDeRegistrarse,
         nombreUsuario,
         contrasenaUsuario,
     } = props;
@@ -53,13 +54,14 @@ const LoginApp = (props) => {
                         title={'Entrar'}
                         color='#193555'
                         onPress={miOnPressDeIniciarSesion}
+
                     />
                 </View>
                 <View style = {styles.Botones}>
                     <Button
                         title={'Registrarse'}
                         color='#193555'
-                        onPress={miOnPressDeIniciarSesion}
+                        onPress={miOnPressDeRegistrarse}
                     />
                 </View>
             </View>
@@ -128,4 +130,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default LoginApp;
+export default LoginApp; 
