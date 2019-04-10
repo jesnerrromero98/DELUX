@@ -27,7 +27,7 @@ const Inicio = (props) => {
     
     return (
         <View>
-
+                   <X> </X>
             <ImageBackground style={styles.fondo2} source={require('./../image/fondo2.png')}> 
                 <ScrollView>
                     

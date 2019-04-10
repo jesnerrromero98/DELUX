@@ -15,6 +15,7 @@ class LoginContainer extends Component {
             usuario: '',
             pass: '',
             logged: false,
+            registrarse: false,
         };
         
     }
@@ -30,13 +31,15 @@ class LoginContainer extends Component {
     miEventoDeBotonIniciarSession = () => {
         const { usuario, pass } = this.state;
         if(usuario === "" && pass === "") {
-            this.setState({
-                logged: true,
-            });
+            this.props.navigation.navigate('MenuDrawer');
         }
         else {
             Alert.alert("INICIO ERRONERO", "Usuario o contraseña incorrecto");
         }
+    }
+
+    miEventoDeRegistrarse = () => {
+        this.props.navigation.navigate('Registro');
     }
 
     isLogged = () => {
@@ -58,6 +61,7 @@ class LoginContainer extends Component {
                     miOnChangeDeUSuario={ this.miEventoDeUsuario }
                     miOnChangeDePassword={ this.miEventoDePass }
                     miOnPressDeIniciarSesion={ this.miEventoDeBotonIniciarSession }
+                    miOnPressDeRegistrarse={ this.miEventoDeRegistrarse }
                     nombreUsuario={ usuario }
                     contrasenaUsuario={ pass }
                 />
