@@ -23,10 +23,10 @@ export default class Profile extends Component {
               <Text style={styles.description}>Del parque niñes feliz 4c al oeste y media al sur</Text>
               
               <TouchableOpacity style={styles.buttonContainer}>
-                <Text>Opcion 1</Text>  
+                <Text>Compras</Text>  
               </TouchableOpacity>              
               <TouchableOpacity style={styles.buttonContainer}>
-                <Text>Opcion 2</Text> 
+                <Text>Carrito</Text> 
               </TouchableOpacity>
             </View>
         </View>
