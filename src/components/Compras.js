@@ -19,13 +19,33 @@ export default class Compras extends Component {
       <Image style={{ width: '80%', height: 180, resizeMode: 'cover',marginLeft:45, marginTop:10 }} source={require('../image/card.png')}/>	
 	
 	  <TextInput
-	  placeholder="Nombre del titular"
+    placeholder="Nombre Completo"
 	  style={{width:315,margin:10, borderColor:"black", 
 	  borderWidth:1,borderRadius: 30,}}	
     underlineColorAndroid="transparent"
     keyboardType={'numeric'}
 	  />
-	  
+    <TextInput
+    placeholder="Direccion"
+	  style={{width:315,margin:10, borderColor:"black", 
+	  borderWidth:1,borderRadius: 30,}}	
+    underlineColorAndroid="transparent"
+    keyboardType={'numeric'}
+	  />
+    <TextInput
+    placeholder="Cedula"
+	  style={{width:315,margin:10, borderColor:"black", 
+	  borderWidth:1,borderRadius: 30,}}	
+    underlineColorAndroid="transparent"
+    keyboardType={'numeric'}
+	  />
+	  <TextInput
+    placeholder="Cuidad"
+	  style={{width:315,margin:10, borderColor:"black", 
+	  borderWidth:1,borderRadius: 30,}}	
+    underlineColorAndroid="transparent"
+    keyboardType={'numeric'}
+	  />
 	  <TextInput
 	  placeholder="Numero de tarjeta"
 	  style={{width:150,margin:10, borderColor:"black", 
