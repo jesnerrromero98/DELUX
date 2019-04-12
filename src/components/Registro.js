@@ -11,7 +11,6 @@ import {
 export default class register extends Component {
   render() {
     return (
-      <ImageBackground style={styles.fondo2} source={require('./../image/fondo.jpg')}>
       <ScrollView>
         
 	<View style={styles.container}>
@@ -19,40 +18,35 @@ export default class register extends Component {
 	
 	  <TextInput
 	  placeholder="Nombre Completo"
-	  style={{width:250,margin:10, borderColor:"white", 
+	  style={{width:250,margin:10, borderColor:"#193555s", 
 	  borderWidth:1,borderRadius: 30,}}	
 	  underlineColorAndroid="transparent"
 	  />
 	  
 	  <TextInput
 	  placeholder="Correo"
-	  style={{width:250,margin:10, borderColor:"white", 
+	  style={{width:250,margin:10, borderColor:"193555s", 
 	  borderWidth:1,borderRadius: 30,}}	
 	  underlineColorAndroid="transparent"
 	  />
 	  
 	  <TextInput
 	   placeholder="Contraseña"
-	  style={{width:250,margin:10, borderColor:"white", 
+	  style={{width:250,margin:10, borderColor:"193555s", 
 	  borderWidth:1,borderRadius: 30,}}	
 	  underlineColorAndroid="transparent"
 	  
 	  />
       <TextInput
 	  placeholder="Edad"
-	  style={{width:250,margin:10, borderColor:"white", 
+	  style={{width:250,margin:10, borderColor:"193555s", 
 	  borderWidth:1,borderRadius: 30,}}	
 	  underlineColorAndroid="transparent"
 	  />
-	   <TextInput
-	  placeholder="Ciudad"
-	  style={{width:250,margin:10, borderColor:"white", 
-	  borderWidth:1,borderRadius: 30}}	
-	  underlineColorAndroid="transparent"
-	  />
+	
      <TextInput
 	  placeholder="Telefono"
-	  style={{width:250,margin:10, borderColor:"white", 
+	  style={{width:250,margin:10, borderColor:"193555s", 
 	  borderWidth:1,borderRadius: 30}}	
 	  underlineColorAndroid="transparent"
 	  />
@@ -68,7 +62,7 @@ export default class register extends Component {
      </View>
      
   </ScrollView>
-  </ImageBackground>
+ 
    );
   }
 }
